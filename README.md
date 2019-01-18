@@ -1,6 +1,26 @@
 # Apache-Spark-MovieLens-Recommendation-System
 Apache Spark Movie Recommendation System on MovieLens
 
+
+## Prerequisites
+Before we start, these packages are required for our analysis:
+
+```Python
+import numpy as np
+import pandas as pd
+import seaborn as sns
+import matplotlib.pyplot as plt
+import math
+import os
+from pyspark.sql import SparkSession
+from pyspark.sql.types import IntegerType, LongType, StringType
+from pyspark.sql import functions as f
+from pyspark.sql.functions import col, size, split, udf
+from pyspark.mllib.recommendation import ALS
+
+```
+
+
 ## Situation: 
 The given data is from MovieLens Latest Datasets that contains four datasets: movies, ratings, links, tags, and movies dataset will be the target data for this project.
 
