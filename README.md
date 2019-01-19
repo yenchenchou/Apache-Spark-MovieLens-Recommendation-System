@@ -46,5 +46,5 @@ The goal is to build a recommendation system based on user rating data.
 3. Evaluate the model using root mean square error, which is a regression based method.
 
 ## Result and future work
-1. I achieve the model with 0.88 error in ALS which is very similiar to the results on the validation data.
+1. I achieve the model with 0.8146 error in ALS which is very similiar to the results on the validation data. The best model has 14 latent factors and regularization = 0.05
 2. To solve cold start problem, the spark ALS only support unrated items or new users to NULL values or just dropped them. This problem may be done by using the item-based collaborating method in the future.
